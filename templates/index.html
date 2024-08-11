@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to AI Based Diagnosis Ststem for Communicable Diseases</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">AI Diagnosis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h4 class="display-6">Welcome to Artificial Intelligence Based Diagnosis Ststem for Communicable Diseases</h4>
+            <p class="lead">This web app leverages AI to assist patients in identifying their immediate health conditions and First Aid before visiting an hospital.</p>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        
+                        <img src="{{ url_for('static', filename='images/arti.webp') }}" class="card-img-top" alt="arti" width="auto" height="305">
+
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">AI Technology</h5>
+                            <p class="card-text">This Web App uses the latest AI technology to help patients to diagnose possible illness and necessary First Aid before visiting the hospital</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/doctor.webp') }}" class="card-img-top" alt="Doc">
+                        <div class="card-body">
+                            <h5 class="card-title">Patient-Focused</h5>
+                            <p class="card-text">We understand the anxiety and uncertainty that come with experiencing health symptoms. That's why our app is designed with the patient in mind, using AI to provide a preliminary diagnosis and offer peace of mind before visiting a hospital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+
+<p>Click the button below to input your symptoms.</p>
+            <a class="btn btn-primary btn-lg" href="/search" role="button">Start Search</a>
+        </div>
+    </div>
+
+         
+           
+          <center> © Jimoh Abdulbasit 2024</a> </center>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

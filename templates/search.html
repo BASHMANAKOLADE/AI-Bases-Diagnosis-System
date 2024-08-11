@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Based Diagnosis Ststem for Communicable Diseases- Search</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Symptoms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Search <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2>Kindly fill the below information carefully for correct diagnosis</h2>
+        <p>Enter your symptoms for proper diagnosis:</p>
+        <form action="result.html" method="get">
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="age" name="age" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+        
+                <!-- Primary Complaint -->
+                <div class="form-group">
+                    <label for="mainSymptom">Main Symptom</label>
+                    <input type="text" class="form-control" name="mainSymptom" placeholder="Describe your main symptom">
+                </div>
+                <div class="form-group">
+                    <label for="symptomStartDate">Symptom Start Date</label>
+                    <input type="date" class="form-control" name="symptomStartDate">
+                </div>
+        
+                <!-- Symptom Checklist -->
+                <h4>Symptom Checklist</h4>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="fever">
+                    <label class="form-check-label" for="fever">Do you have a fever?</label>
+                </div>
+                <div class="form-group">
+                    <label for="temperature">If yes, what is your temperature?</label>
+                    <input type="number" step="0.1" class="form-control" name="temperature" placeholder="Enter your temperature">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="cough">
+                    <label class="form-check-label" for="cough">Do you have a cough?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="soreThroat">
+                    <label class="form-check-label" for="soreThroat">Do you have a sore throat?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="shortnessOfBreath">
+                    <label class="form-check-label" for="shortnessOfBreath">Do you have shortness of breath or difficulty breathing?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="nasalCongestion">
+                    <label class="form-check-label" for="nasalCongestion">Do you have nasal congestion or a runny nose?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="muscleAches">
+                    <label class="form-check-label" for="muscleAches">Do you have muscle or body aches?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="fatigue">
+                    <label class="form-check-label" for="fatigue">Do you have fatigue or unusual tiredness?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="nausea">
+                    <label class="form-check-label" for="nausea">Do you have nausea, vomiting, or diarrhea?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="headache">
+                    <label class="form-check-label" for="headache">Do you have a headache?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="rash">
+                    <label class="form-check-label" for="rash">Do you have a rash or skin changes?</label>
+                </div>
+        
+                <!-- Exposure History -->
+                <h4>Exposure History</h4>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="contactWithSick">
+                    <label class="form-check-label" for="contactWithSick">Have you been in close contact with anyone who is sick or diagnosed with a communicable disease recently?</label>
+                </div>
+                <div class="form-group">
+                    <label for="travelHistory">Have you traveled outside your local area or to any places with known outbreaks recently?</label>
+                    <select class="form-control" name="travelHistory">
+                        <option>No</option>
+                        <option>Yes</option>
+                    </select>
+                    <label for="travelDetails">If yes, where did you travel and when?</label>
+                    <input type="text" class="form-control" id="travelDetails" placeholder="Enter travel details">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="workplace">
+                    <label class="form-check-label" for="workplace">Do you live or work in a setting where others have been sick (e.g., school, workplace, crowded living conditions)?</label>
+                </div>
+        
+                <!-- Medical History -->
+                <h4>Medical History</h4>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="vaccinations">
+                    <label class="form-check-label" for="vaccinations">Are you up-to-date with your vaccinations?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="chronicConditions">
+                    <label class="form-check-label" for="chronicConditions">Do you have any chronic medical conditions (e.g., asthma, diabetes, HIV)?</label>
+                </div>
+        
+                <!-- Submit Button -->
+                <button type="Diagnose" class="btn btn-primary">Diagnose</button>
+            </form>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>
+
+
+
+        </form>
+    </div>
+   
+    <center> >© Jimoh Abdulbasit 2024</a> </center>
+
+<!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+  const courseSelect = document.getElementById('discipline');
+  const projectFocusSelect = document.getElementById('project_type');
+
+  courseSelect.addEventListener('change', () => {
+    if (courseSelect.value === 'Computer Science'){
+      projectFocusSelect.disabled = false;
+    } else {
+      projectFocusSelect.disabled = true;
+      projectFocusSelect.value = '';
+    }
+  });
+</script>
+
+</body>
+</html>
